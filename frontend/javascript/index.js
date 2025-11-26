@@ -8,6 +8,7 @@ import "./webawesome/dist/components/button/button.js"
 import "./webawesome/dist/components/icon/icon.js"
 import "./webawesome/dist/components/spinner/spinner.js"
 import "./webawesome/dist/components/page/page.js";
+import "./webawesome/dist/components/card/card.js";
 
 /**
  * Adds support for declarative shadow DOM. Requires your HTML <head> to include:

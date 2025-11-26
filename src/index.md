@@ -4,6 +4,10 @@
 layout: default
 ---
 
-### EUA over time
+<wa-card class="card-basic">
+
+  <h3>EUA over time</h3>
+
+</wa-card>
 
 
