@@ -8,6 +8,11 @@ layout: default
 
   <h3>EUA over time</h3>
 
+
+  <h3>Leadership Team</h3>
+
+  <%= render "leadership_team", lt_members: collections.lt_members %>
+
 </wa-card>
 
 
