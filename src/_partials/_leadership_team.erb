@@ -3,84 +3,21 @@
     <h3>MRL IT EUA Leadership Team</h3>
     <p>
       This is the MRL IT EUA Leadership Team. I'm debating if I should leave Michael and Andrea in. I think Michael will be part of the LT going forward but Andrea won't. Maybe part of the XLT? Should we have an XLT, BTW?
-      <% lt_members.each do |member| %>
-        Hi, Mom
-        <%= member.data.location %>
-      <% end %>
     </p>
   </div>
   <div class="wa-grid wa-gap-2xl" style="--min-column-size: 30ch;">
-    <div class="wa-flank">
-      <div>
-        <wa-avatar
-          image="https://images.unsplash.com/photo-1545194827-db87df1649d9?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ></wa-avatar>
+    <% lt_members.each do |member| %>
+      <div class="wa-flank">
+        <div>
+          <wa-avatar
+            image="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          </wa-avatar>
+        </div>
+        <div class="wa-stack wa-gap-xs">
+          <h3 class="wa-heading-l"><%= member.data.name %></h3>
+          <span class="wa-caption-m"><%= member.data.title %></span>
+        </div>
       </div>
-
-      <div class="wa-stack wa-gap-xs">
-        <h3 class="wa-heading-l">Liz Hamilton</h3>
-        <span class="wa-caption-m">Owner</span>
-      </div>
-    </div>
-    <div class="wa-flank">
-      <div>
-        <wa-avatar
-          image="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ></wa-avatar>
-      </div>
-
-      <div class="wa-stack wa-gap-xs">
-        <h3 class="wa-heading-l">Mike Mazlon</h3>
-        <span class="wa-caption-m">CFO</span>
-      </div>
-    </div>
-    <div class="wa-flank">
-      <div>
-        <wa-avatar
-          image="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ></wa-avatar>
-      </div>
-
-      <div class="wa-stack wa-gap-xs">
-        <h3 class="wa-heading-l">Steph Henderson</h3>
-        <span class="wa-caption-m">CMO</span>
-      </div>
-    </div>
-    <div class="wa-flank">
-      <div>
-        <wa-avatar
-          image="https://images.unsplash.com/photo-1658932447624-152eaf36cf4e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ></wa-avatar>
-      </div>
-
-      <div class="wa-stack wa-gap-xs">
-        <h3 class="wa-heading-l">Cheryl Harris</h3>
-        <span class="wa-caption-m">CTO</span>
-      </div>
-    </div>
-    <div class="wa-flank">
-      <div>
-        <wa-avatar
-          image="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ></wa-avatar>
-      </div>
-
-      <div class="wa-stack wa-gap-xs">
-        <h3 class="wa-heading-l">Leslie Alexander</h3>
-        <span class="wa-caption-m">Principal Designer</span>
-      </div>
-    </div>
-    <div class="wa-flank">
-      <div>
-        <wa-avatar
-          image="https://images.unsplash.com/photo-1590586029974-2c90c0718449?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ></wa-avatar>
-      </div>
-
-      <div class="wa-stack wa-gap-xs">
-        <h3 class="wa-heading-l">Leslie Alexander</h3>
-        <span class="wa-caption-m">Head of Product</span>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
