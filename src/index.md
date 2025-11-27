@@ -4,18 +4,18 @@
 layout: default
 ---
 
-<wa-card class="card-basic">
+<wa-card class="card-basic" style="text-align: left">
 
-  <section style="margin-bottom: 3rem;">
-    <h3>EUA over time</h3>
+  <section id="history" style="margin-bottom: 3rem;">
+    <h3>History</h3>
     <%= render "eua_history", milestones: collections.milestones %>
   </section>
 
-  <section style="margin-bottom: 3rem;">
+  <section id="about-eua" style="margin-bottom: 3rem;">
     <%= render "eua_principles" %>
   </section>
 
-  <section style="margin-bottom: 3rem;">
+  <section id="myo" style="margin-bottom: 3rem;">
     <h3>EUA MYO Changes</h3>
     <ul>
       <li>Lean in to Strategic Programs and Initiatives</li>
@@ -26,7 +26,7 @@ layout: default
     </ul>
   </section>
 
-  <section style="margin-bottom: 3rem;">
+  <section id="lt" style="margin-bottom: 3rem;">
     <%= render "leadership_team", lt_members: collections.lt_members %>
   </section>
 
