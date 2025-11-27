@@ -1,13 +1,15 @@
-<div class="wa-stack wa-gap-3xs" style="max-width: 60ch; margin: auto">
-  <% milestones.each do |m| %>
+<div class="wa-stack wa-gap-3xs" style="max-width: 80ch; margin: auto">
+  <% milestones.sort_by { |m| m.data.sort_order }.each do |m| %>
     <article class="wa-flank" style="flex-wrap: nowrap">
       <wa-avatar style="--size: 2rem">
         <wa-icon slot="icon" name="check"></wa-icon>
       </wa-avatar>
       <div class="wa-flank:end wa-gap-xs">
-        <span><%= m.data.event %></span>
-        <wa-format-date date="<%= m.data.date %>" month="short" day="numeric"></wa-format-date>
+        <wa-tooltip for="<%= m.data.event %>" placement="top"><%= "EUA.size ~= #{m.data.group_size}" %></wa-tooltip>
+        <span id="<%= m.data.event %>"><%= m.data.event %></span>
+        <wa-format-date date="<%= m.data.date %>" month="long" year="numeric"></wa-format-date>
       </div>
     </article>
+    <wa-divider></wa-divider>
   <% end %>
 </div>
