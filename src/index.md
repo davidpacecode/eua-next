@@ -6,11 +6,18 @@ layout: default
 
 <wa-card class="card-basic">
 
-  <h3>EUA over time</h3>
+  <section style="margin-bottom: 3rem;">
+    <h3>EUA over time</h3>
+    <%= render "eua_history", milestones: collections.milestones %>
+  </section>
 
-  <%= render "eua_history", milestones: collections.milestones %>
+  <section style="margin-bottom: 3rem;">
+    <%= render "eua_principles" %>
+  </section>
 
-  <%= render "leadership_team", lt_members: collections.lt_members %>
+  <section style="margin-bottom: 3rem;">
+    <%= render "leadership_team", lt_members: collections.lt_members %>
+  </section>
 
 </wa-card>
 
