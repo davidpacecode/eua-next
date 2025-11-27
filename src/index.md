@@ -8,6 +8,7 @@ layout: default
 
   <h3>EUA over time</h3>
 
+  <%= render "eua_history", milestones: collections.milestones %>
 
   <h3>Leadership Team</h3>
 

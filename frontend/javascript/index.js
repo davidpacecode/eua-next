@@ -10,6 +10,7 @@ import "./webawesome/dist/components/spinner/spinner.js"
 import "./webawesome/dist/components/page/page.js";
 import "./webawesome/dist/components/card/card.js";
 import "./webawesome/dist/components/avatar/avatar.js";
+import "./webawesome/dist/components/format-date/format-date.js";
 
 /**
  * Adds support for declarative shadow DOM. Requires your HTML <head> to include:
