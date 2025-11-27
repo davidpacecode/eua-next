@@ -3,7 +3,7 @@
     <wa-tooltip for="<%= m.data.event %>" placement="top"><%= "EUA.size ~= #{m.data.group_size}" %></wa-tooltip>
     <article class="wa-flank" style="flex-wrap: nowrap">
       <wa-avatar style="--size: 2rem">
-        <wa-icon slot="icon" name="check"></wa-icon>
+        <wa-icon slot="icon" name="<%= m.data.icon %>"></wa-icon>
       </wa-avatar>
       <div class="wa-flank:end wa-gap-xs">
         <span id="<%= m.data.event %>"><%= m.data.event %></span>
