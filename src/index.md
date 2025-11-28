@@ -17,6 +17,7 @@ layout: default
 
   <section id="myo" style="margin-bottom: 3rem;">
     <h3>EUA MYO Changes</h3>
+    <%= render "myo" %>
     <ul>
       <li>Lean in to Strategic Programs and Initiatives</li>
       <li>UX 2.0</li>
