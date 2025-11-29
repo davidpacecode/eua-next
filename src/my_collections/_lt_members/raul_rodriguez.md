@@ -5,7 +5,7 @@ role: Strategic Program Director + Rapid
 title: Director
 location: Rahway, NJ
 quote: Devils are great
-sort_order: 4
+sort_order: 3
 ---
 
 
